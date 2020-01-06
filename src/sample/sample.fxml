@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="600.0" fitWidth="500.0"  pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../raw/Background-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="humanButtonImageView" fitHeight="145.0" fitWidth="120.0" layoutX="70.0" layoutY="260.0" onMouseClicked="#onButtonClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="270.0" layoutY="260.0" onMouseClicked="#onButtonClick" pickOnBounds="true" preserveRatio="true" />
+      
+               
+            <GridPane fx:id="boardGrid" layoutX="40.0" layoutY="90.0"  visible="false">
+      <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="7" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="6" GridPane.columnIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="9" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="1" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="4" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+                     <ImageView fitHeight="100.0" fitWidth="100.0" onMousePressed="#onclick" pickOnBounds="true" preserveRatio="true" userData="8" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ImageView>
+      
+               
+               <columnConstraints>
+         <ColumnConstraints maxWidth="130.0" minWidth="130.0" prefWidth="130.0" />
+         <ColumnConstraints maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+         <ColumnConstraints maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+      </GridPane>
+
+      <ImageView fx:id="lineImageView" fitHeight="60.0" fitWidth="515.0" layoutY="60.0"  pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</Pane>
